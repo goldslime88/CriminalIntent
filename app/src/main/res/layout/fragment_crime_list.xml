@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.RecyclerView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/crime_recycler_view"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:weightSum="1">
+    <android.support.v7.widget.RecyclerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/crime_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id = "@+id/create_crime_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/create_crime_hint"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <Button
+        android:id="@+id/add_first_crime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@android:style/Widget.Button"
+        android:textSize="24sp"
+        android:textColor="@color/colorPrimaryDark"/>
+</LinearLayout>
