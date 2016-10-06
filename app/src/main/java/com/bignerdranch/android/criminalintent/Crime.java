@@ -13,6 +13,8 @@ public class Crime {
     private Date mDate;
     private boolean mSolved;
     private String mSuspect;
+    private String mSuspectContactId;
+
     public Crime() {
         //Generate unique identifier
         this(UUID.randomUUID());
@@ -58,5 +60,13 @@ public class Crime {
 
     public void setSuspect(String suspect) {
         mSuspect = suspect;
+    }
+
+    public String getSuspectContactId() {
+        return mSuspectContactId;
+    }
+
+    public void setSuspectContactId(String suspectContactId) {
+        mSuspectContactId = suspectContactId;
     }
 }
